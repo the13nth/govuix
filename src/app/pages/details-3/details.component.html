@@ -1,0 +1,133 @@
+<div class="details-page__wrapper-dark">
+    <!--<svg class="background-gradient__circle" viewBox="4572 73 1328 1328">
+      <defs>
+        <linearGradient id="ddd" x2="0" y2="1" gradientUnits="objectBoundingBox">
+          <stop offset="0" stop-color="#ff8b8b"/>
+          <stop offset="1" stop-color="#6676ff"/>
+        </linearGradient>
+      </defs>
+      <circle cx="664" cy="664" r="664" fill="url(#ddd)" transform="translate(4572 73)"/>
+    </svg>-->
+
+    <svg class="back__button" routerLink="" viewBox="4085 152 98.5 126">
+      <defs>
+        <style>.a {
+          fill: #2b244d;
+        }
+
+        .b {
+          fill: rgba(0, 0, 0, 0);
+        }
+
+        .b, .c {
+          stroke: #fff;
+          stroke-width: 2px;
+        }
+
+        .c {
+          fill: none;
+        }
+
+        .d {
+          fill: #fff;
+          font-size: 15px;
+          font-family: SegoeUI, Segoe UI;
+          letter-spacing: 0.4em;
+        }</style>
+      </defs>
+      <g transform="translate(3980)">
+        <circle class="a" cx="39" cy="39" r="39" transform="translate(105 152)"/>
+        <line class="b" x1="80" transform="translate(123.5 190.5)"/>
+        <line class="b" y1="26" x2="26" transform="translate(123.5 164.5)"/>
+        <line class="c" x1="26" y1="27" transform="translate(123.5 190.5)"/>
+        <text class="d" transform="translate(117 274)">
+          <tspan x="0" y="0">BACK</tspan>
+        </text>
+      </g>
+    </svg>
+
+    <section class="main-weather__card-dark">
+      <section class="card-header__container-dark" [ngSwitch]="true">
+
+
+
+
+
+        <svg *ngSwitchDefault viewBox="4302 163 1218 406">
+          <defs>
+            <style>.aa {
+              opacity: 0.6;
+            }</style>
+            <linearGradient id="aa" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+              <stop offset="0" stop-color="#000075"/>
+              <stop offset="1" stop-color="#ff8c8c"/>
+            </linearGradient>
+          </defs>
+          <path class="aa" fill="url(#aa)"
+                d="M20,0H1198a20,20,0,0,1,20,20V406a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V20A20,20,0,0,1,20,0Z"
+                transform="translate(4302 163)"/>
+        </svg>
+
+        <div class="header-content__wrapper">
+          <div class="city-name__container">
+              <span class="city-name__text">MINADEF<br>
+                <div class="incumbent"> Incumbent: Albert Murasira</div>
+              </span>
+            </div>
+
+          </div>
+
+      </section>
+
+      <main class="body-content__wrapper">
+        <section class="twitter-feed__container">
+          <div class="twitter-feed__header">
+            <svg class="twitter__icon" viewBox="4332 625.812 30 24.375">
+              <defs>
+                <style>.twitter-icon-fill {
+                  fill: #03a9f4;
+                }</style>
+              </defs>
+              <path class="twitter-icon-fill"
+                    d="M30,50.886a12.823,12.823,0,0,1-3.544.971,6.116,6.116,0,0,0,2.706-3.4,12.291,12.291,0,0,1-3.9,1.489,6.15,6.15,0,0,0-10.639,4.206,6.333,6.333,0,0,0,.143,1.4A17.408,17.408,0,0,1,2.089,49.121a6.152,6.152,0,0,0,1.89,8.22A6.074,6.074,0,0,1,1.2,56.584v.067a6.179,6.179,0,0,0,4.928,6.043,6.139,6.139,0,0,1-1.613.2,5.439,5.439,0,0,1-1.164-.1A6.209,6.209,0,0,0,9.1,67.076,12.358,12.358,0,0,1,1.472,69.7,11.521,11.521,0,0,1,0,69.615a17.315,17.315,0,0,0,9.435,2.76c11.318,0,17.505-9.375,17.505-17.5,0-.272-.009-.534-.023-.8A12.269,12.269,0,0,0,30,50.886Z"
+                    transform="translate(4332 577.812)"/>
+            </svg>
+            <span class="twitter-feed__text">Twitter Feed</span>
+            <span class="twitter-feed-tag__text"></span>
+          </div>
+          <div class="twitter-feed__body">
+          <ngx-twitter-timeline
+          [data]="{sourceType: 'url', url: 'https://twitter.com/RwandaMoD'}"
+          [opts]="{tweetLimit: 5}"
+          >
+        </ngx-twitter-timeline>
+                        </div>
+        </section>
+
+        <section class="forecast__container">
+
+
+
+          <div class="day-weather__container" [ngSwitch]="true">
+          </div>
+
+          <div class="day-weather__container" [ngSwitch]="true">
+          </div>
+
+
+          <div class="day-weather__container" [ngSwitch]="true">
+
+          </div>
+
+          <div class="day-weather__container" [ngSwitch]="true">
+
+          </div>
+        </section>
+
+
+      </main>
+
+    </section>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
+    <script src="bower_components/ngtweet/dist/ngtweet.min.js"></script>
+  </div>
