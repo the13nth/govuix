@@ -1,3 +1,8 @@
+
+<head>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/node_modules/angular-material/angular-material.css">
+  </head>
 <div class="details-page__wrapper-dark">
     <!--<svg class="background-gradient__circle" viewBox="4572 73 1328 1328">
       <defs>
@@ -98,36 +103,95 @@
           <div class="twitter-feed__body">
           <ngx-twitter-timeline
           [data]="{sourceType: 'url', url: 'https://twitter.com/RwandaGov'}"
-          [opts]="{tweetLimit: 5}"
+          [opts]="{tweetLimit: 6}"
           >
         </ngx-twitter-timeline>
-                        </div>
+        </div>
         </section>
 
         <section class="forecast__container">
 
+            <div class="resources">
+              <h1>Relevant resources</h1>
+              <p>As more people visit,these will filter using predictive algorithms to show the most relevant resources</p>
+              <div class="row">
+                  <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="our-team">
+                      <div class="picture">
+                          <a href="www.paulkagame.com"> <img class="img-fluid" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.zL9hRbg5LisclshQ8XY4XgHaH1%26pid%3D15.1&f=1"></a>
+                      </div>
+                      <div class="team-content">
+                        <h3 class="name">Office Information</h3>
+                        <h4 class="title"></h4>
+                      </div>
+                      <ul class="social">
+                          <button mat-raised-button>View info</button>
+                      </ul>
+                    </div>
+                  </div>
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="our-team">
+                      <div class="picture">
+                        <img class="img-fluid" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.zL9hRbg5LisclshQ8XY4XgHaH1%26pid%3D15.1&f=1">
+                      </div>
+                      <div class="team-content">
+                        <h3 class="name">Anouncements</h3>
+                        <h4 class="title"></h4>
+                      </div>
+                      <ul class="social">
+                          <button mat-raised-button>View info</button>
+                      </ul>
+                    </div>
+                  </div>
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="our-team">
+                      <div class="picture">
+                        <img class="img-fluid" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.zL9hRbg5LisclshQ8XY4XgHaH1%26pid%3D15.1&f=1">
+                      </div>
+                      <div class="team-content">
+                        <h3 class="name">Activities</h3>
+                        <h4 class="title"></h4>
+                      </div>
+                      <ul class="social">
+                          <button mat-raised-button>View info</button>
+                      </ul>
+                    </div>
+                  </div>
+                      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="our-team">
+                      <div class="picture">
+                        <img class="img-fluid" src="https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.zL9hRbg5LisclshQ8XY4XgHaH1%26pid%3D15.1&f=1">
+                      </div>
+                      <div class="team-content">
+                        <h3 class="name">News center</h3>
+                        <h4 class="title"></h4>
+                      </div>
+                      <ul class="social">
+                          <button mat-raised-button>View info</button>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+            </div>
 
 
-          <div class="day-weather__container" [ngSwitch]="true">
-          </div>
-
-          <div class="day-weather__container" [ngSwitch]="true">
-          </div>
-
-
-          <div class="day-weather__container" [ngSwitch]="true">
-
-          </div>
-
-          <div class="day-weather__container" [ngSwitch]="true">
-
-          </div>
         </section>
 
 
       </main>
 
     </section>
+
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
     <script src="bower_components/ngtweet/dist/ngtweet.min.js"></script>
+    <script src="/node_modules/angular/angular.js"></script>
+    <script src="/node_modules/angular-aria/angular-aria.js"></script>
+    <script src="/node_modules/angular-animate/angular-animate.js"></script>
+    <script src="/node_modules/angular-messages/angular-messages.js"></script>
+    <script src="/node_modules/angular-material/angular-material.js"></script>
+    <script>
+    // Include app dependency on ngMaterial
+    angular.module('YourApp', ['ngMaterial', 'ngMessages'])
+      .controller("YourController", YourController);
+    </script>
   </div>
