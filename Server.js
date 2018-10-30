@@ -4,7 +4,7 @@ var path = require('path');
 
 app.use(express.static(path.join(__dirname, 'dist/Minimus')));
 
-app.get('/', function(req,res){
+app.get('dist/Minimus', function(req,res){
    res.sendFile('index.html', {root: path.join(__dirname, './dist/Minimus')})
 });
 
