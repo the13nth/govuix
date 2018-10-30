@@ -1,8 +1,13 @@
-const express = require('express');
-const app = express();
-// Run the app by serving the static files
-// in the dist directory
-app.use(express.static(__dirname + '/dist'));
-// Start the app by listening on the default
-// Heroku port
-app.listen(process.env.PORT || 8080);
+var express = require('express');
+var app = express();
+var path = require('path');
+
+app.use(express.static(path.join(__dirname, 'dist/Minimus')));
+
+app.get('/', function(req,res){
+   res.sendFile('index.html', {root: path.join(__dirname, './dist/Minimus')})
+});
+
+app.listen(8080, function(){
+    console.log((new Date()) + " Server is listening on port 8080");
+});
